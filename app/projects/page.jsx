@@ -7,7 +7,7 @@ const Projects = () => {
     <>
         <TransitionEffect/>
         <div className='w-full h-full flex justify-center items-center'>
-        Project Page
+          Project Page
         </div>
     </>
   )
