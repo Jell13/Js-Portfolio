@@ -6,6 +6,7 @@ import {motion} from 'framer-motion'
 import Image from 'next/image'
 import Hero from '../../public/hero.jpg'
 import Skills from '../components/Skills'
+import Experience from '../components/Experience'
 
 const About = () => {
   return (
@@ -26,13 +27,13 @@ const About = () => {
 
             {/* Text Container */}
             <p>
-              Hi, I'm Jason, a web developer that works with both front-end and also back-end. Having a pasion to solve problems through coding. Loves doing puzzle and work effortlessly in order to satisfy and brings any client's vision to life.
+            Hello, I'm Jason, a proficient web developer experienced in both front-end and back-end development. I strive to create clients' visions using my dedication to problem solving in coding.
             </p>
             <p className='mt-4'>
-              I believe when solving problems I treat them almost as a game of puzzles that we need to complete with each pieces in order to have an amazing output. I do that because it makes it better and enjoyable experience when solving a problem.
+              I approach challenges like an intricate puzzle. I carefully piece together each component to carefully craft the desired output. This approach not only increases efficiency but also makes the process more enjoyable and fullfilling.
             </p>
             <p className='mt-4'>
-              I don't only try my best to be good in making web applications but I love to make them interactive therefore any type of medium would be satisfied with the result that I produce. I look forward to any opportunity that I will find in the future.
+              I am deeply passionate about creating interactive experiences accessible on different devices. Eager to find opportunities to continue growing my skills and expertise in the future.
             </p>
           </div>
           <div className='col-span-3 ml-8 relative h-max rounded-2xl border-2 border-solid border-black'>
@@ -46,6 +47,9 @@ const About = () => {
           <Skills/>
         </div>
           
+        <div className='w-full'>
+          <Experience/>
+        </div>
       </div>
     </>
   )
