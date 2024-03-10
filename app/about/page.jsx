@@ -12,11 +12,11 @@ const About = () => {
   return (
     <>
       <TransitionEffect/>
-      <div className='h-full w-full flex flex-col items-center p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48'>
+      <div className='h-full w-full min-h-screen bg-light dark:bg-dark dark:text-white flex  flex-col items-center p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48'>
         <motion.div
-        initial={{y:"-200vh"}}
+        initial={{y:"10vh"}}
         animate={{y:"0%"}}
-        transition={{duration:1}} className='text-7xl font-bold flex self-center'>
+        transition={{duration: 1.5}} className='text-7xl font-bold flex self-center'>
           Passion Fuels Purpose!
         </motion.div>
 
@@ -36,7 +36,7 @@ const About = () => {
               I am deeply passionate about creating interactive experiences accessible on different devices. Eager to find opportunities to continue growing my skills and expertise in the future.
             </p>
           </div>
-          <div className='col-span-3 ml-8 relative h-max rounded-2xl border-2 border-solid border-black'>
+          <div className='col-span-3 ml-8 relative h-max rounded-2xl border-2 border-solid border-dark'>
             <Image src={Hero} className='w-full h-auto rounded-2xl'></Image>      
           </div>
           

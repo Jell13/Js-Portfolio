@@ -49,10 +49,9 @@ const Skill = ({name, x, y}) => {
   return (
     <motion.div
     initial={{x:0, y:0}}
-    whileInView={{x:x, y:y}}
-    transition={{duration:1.5}}
+    whileInView={{x:x, y:y, transition: {duration:1.5}}}
     whileHover={{scale:1.05}}
-    className='flex items-center justify-center bg-black text-white rounded-full font-semibold py-3 px-6 shadow-dark cursor-pointer absolute'>
+    className='flex items-center justify-center bg-dark text-white dark:bg-light dark:text-dark rounded-full font-semibold py-3 px-6 shadow-dark cursor-pointer absolute'>
       {name}
     </motion.div>
   )
@@ -60,16 +59,16 @@ const Skill = ({name, x, y}) => {
 
 const Skills = () => {
   return (
-    <div>
+    <div className='w-full '>
       <h2 className='font-bold text-6xl mt-56 text-center'>Skills</h2>
-      <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circulaLight'>
+      <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark'>
         <motion.div
         whileHover={{scale:1.05}}
-        className='flex items-center justify-center bg-black text-white rounded-full font-semibold p-8 shadow-dark cursor-pointer'>
+        className='flex items-center justify-center bg-black text-white dark:bg-light dark:text-dark rounded-full font-semibold p-8 shadow-dark cursor-pointer'>
           Web
         </motion.div>
         {skills.map((skill) =>(
-          <Skill name={skill.name} x={skill.x} y={skill.y}/>
+          <Skill key={skill.name} name={skill.name} x={skill.x} y={skill.y}/>
         ))}
       </div>
     </div>
