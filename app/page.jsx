@@ -14,7 +14,7 @@ export default function Home() {
       initial={{y:"10vh"}}
       animate={{y:"0%"}}
       transition={{duration: 1.5}}
-       className='h-full w-full flex flex-col justify-center items-center'>
+       className='h-full w-full flex flex-col z-0 justify-center xl:p-24 lg:p-16 md:p-12 sm:p-8 items-center'>
 
         <Image src="/profile.png" width={90} height={90} className='rounded-[100%]'></Image>
         <p className='pt-2'>Software Engineering</p>

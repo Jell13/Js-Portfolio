@@ -51,7 +51,7 @@ const Skill = ({name, x, y}) => {
     initial={{x:0, y:0}}
     whileInView={{x:x, y:y, transition: {duration:1.5}}}
     whileHover={{scale:1.05}}
-    className='flex items-center justify-center bg-dark text-white dark:bg-light dark:text-dark rounded-full font-semibold py-3 px-6 shadow-dark cursor-pointer absolute'>
+    className='flex items-center justify-center md:bg-dark md:text-white dark:bg-light dark:text-dark text-white border-[2px] border-light bg-dark rounded-full font-semibold py-1.5 px-3 text-sm md:py-2 md:px-4 lg:py-3 lg:px-6 shadow-dark cursor-pointer absolute'>
       {name}
     </motion.div>
   )
@@ -61,10 +61,10 @@ const Skills = () => {
   return (
     <div className='w-full '>
       <h2 className='font-bold text-6xl mt-56 text-center'>Skills</h2>
-      <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark'>
+      <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLightSm md:bg-circularLight dark:md:bg-circularDark dark:bg-circularDarkSm'>
         <motion.div
         whileHover={{scale:1.05}}
-        className='flex items-center justify-center bg-black text-white dark:bg-light dark:text-dark rounded-full font-semibold p-8 shadow-dark cursor-pointer'>
+        className='flex items-center justify-center bg-black text-white dark:bg-light dark:text-dark rounded-full font-semibold p-4 md:p-6 lg:p8 shadow-dark cursor-pointer'>
           Web
         </motion.div>
         {skills.map((skill) =>(

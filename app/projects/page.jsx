@@ -37,14 +37,14 @@ const Projects = () => {
   return (
     <>
         <TransitionEffect/>
-        <div className='w-full mb-6 flex flex-col items-center justify-center'>
+        <div className='w-full mb-6 p-4 flex flex-col items-center justify-center'>
           <motion.div
           initial={{y:"10vh"}}
           animate={{y:"0%"}}
           transition={{duration: 1.5}} className='text-7xl mt-16 font-bold flex self-center '>
             Learn By Doing
           </motion.div>
-          <div className='grid mt-20 grid-cols-12 gap-24'>
+          <div className='grid mt-20 md:grid-cols-12 gap-24'>
             <div className=' col-span-12'>
               <FeaturedProject title="Social Media App" type="Featured Project" link="/" summary="A social media app using
               NextJs, MongoDB, TailwindCSS" github="/"/>

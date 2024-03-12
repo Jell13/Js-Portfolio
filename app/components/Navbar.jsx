@@ -30,18 +30,18 @@ const links = [
 const CustomMobileLink = ({href, title, toggle}) => {
 
     const router = usePathname();
+    
     const handleClick = () => {
         toggle()
-        router.push(href)
     }
 
     return(
-        <button onClick={handleClick} className="relative group" href={href}>
+        <Link onClick={handleClick} className="relative group text-light dark:text-dark" href={href}>
             {title}
-            <span className={`h-[2px] inline-block absolute bg-dark dark:text-dark dark:bg-light left-0 bottom-0.5
+            <span className={`h-[2px] inline-block absolute bg-light dark:bg-dark left-0 bottom-0.5
             group-hover:w-full transition-[width] ease duration-300 ${router === href ? 'w-full' :' w-0'}`}>
                 &nbsp;</span>
-        </button>
+        </Link>
     )
 }
 
@@ -69,7 +69,7 @@ const Navbar = () => {
         setOpen(!open)
     }
   return (
-    <header className="w-full h-full py-8 px-32 dark:bg-dark dark:text-light
+    <header className="w-full h-full py-8 md:px-32 px-8 dark:bg-dark dark:text-light
      font-medium flex items-center justify-between relative">
 
         <button className="flex-col justify-center items-center md:hidden flex" onClick={handleClick}>
@@ -78,9 +78,9 @@ const Navbar = () => {
             <span className={`bg-dark dark:bg-light block transition-all ease-out duration-300 h-0.5 w-6 rounded-sm -translate-y-0.5 ${ open ? "-translate-y-1 -rotate-45" : "translate-y-0.5"}`}></span>
         </button>
 
-        <div className="w-full hidden justify-center items-center md:flex">
+        <div className="w-full justify-center items-center flex">
             <nav
-            className="flex flex-row gap-6 w-1/3">
+            className="md:flex hidden flex-row gap-6 w-1/3">
                 {/* <CustomLink href='/' title={'Home'}></CustomLink>
                 <CustomLink href={'/about'} title={'About'}></CustomLink>
                 <CustomLink href={'/projects'} title={'Projects'}></CustomLink>
@@ -93,7 +93,7 @@ const Navbar = () => {
                 <Logo/>
             </div>
             
-            <nav className="flex gap-2 w-1/3 justify-center items-center">
+            <nav className="md:flex hidden gap-2 w-1/3 justify-center items-center">
 
                 <Link className="w-8 h-8 mr-4" href="https://github.com">
                     <GithubIcon className="w-full h-full"/>
@@ -112,7 +112,9 @@ const Navbar = () => {
         </div>
 
         {open && 
-        <div className="w-[70vw] z-30 flex-col justify-center items-center md:flex fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+        <motion.div
+        initial={{scale:0, opacity:0, x:"-50%", y:"-50%"}}
+        animate={{scale:1, opacity:1}} className="w-[70vw] z-30 flex-col gap-2 justify-center items-center md:flex fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
         bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32">
             <nav
             className="flex flex-col justify-center items-center gap-6">
@@ -128,15 +130,18 @@ const Navbar = () => {
             <nav className="flex gap-2 justify-center items-center">
 
                 <Link className="w-8 h-8 mr-4" href="https://github.com">
-                    <GithubIcon className="w-full h-full"/>
+                    <GithubIcon className="w-full dark:bg-dark bg-light h-full"/>
                 </Link>
                 
                 <Link className="w-8 h-8" href="https://linkedin.com">
                     <LinkedInIcon className="w-full h-full"/>
                 </Link>
-            
+                <button className={`ml-4 flex items-center justify-center rounded-full p-[5px] ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+                onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+                    {mode === "dark" ? <SunIcon className={"fill-dark"}/> : <MoonIcon className={"fill-dark"}/> }
+                </button>
             </nav>
-        </div>}
+        </motion.div>}
         
     </header>
   )

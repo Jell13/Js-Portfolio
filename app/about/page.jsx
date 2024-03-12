@@ -21,11 +21,11 @@ const About = () => {
         </motion.div>
 
         {/* Biography */}
-        <div className='mt-20 grid grid-cols-6 self-start'>
-          <div className=' col-span-3'>
-            <h1 className='text-xl font-semibold mb-10'>BIOGRAPHY</h1>
+        <div className='mt-20 flex flex-col gap-5 md:flex-row self-start'>
 
-            {/* Text Container */}
+          {/* Text Container */}
+          <div className='md:w-1/2'>
+            <h1 className='text-xl font-semibold mb-10'>BIOGRAPHY</h1>
             <p>
             Hello, I'm Jason, a proficient web developer experienced in both front-end and back-end development. I strive to create clients' visions using my dedication to problem solving in coding.
             </p>
@@ -36,7 +36,7 @@ const About = () => {
               I am deeply passionate about creating interactive experiences accessible on different devices. Eager to find opportunities to continue growing my skills and expertise in the future.
             </p>
           </div>
-          <div className='col-span-3 ml-8 relative h-max rounded-2xl border-2 border-solid border-dark'>
+          <div className='md:w-1/2 ml-8 relative h-max rounded-2xl border-2 border-solid border-dark'>
             <Image src={Hero} className='w-full h-auto rounded-2xl'></Image>      
           </div>
           
