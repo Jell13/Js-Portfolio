@@ -12,7 +12,7 @@ const Details = ({position, company, companyLink, time, address, work}) => {
     
     <LiIcon reference={ref}/>
     <div>
-      <h3 className='capitalize font-bold text-2xl'>
+      <h3 className='capitalize font-bold md:text-2xl text-lg'>
         {position}&nbsp;
         <a href=""
         target='_blank'
@@ -45,7 +45,7 @@ const Experience = () => {
       <h1 className=' font-bold text-6xl my-20'>Experience & Education</h1>
       <div ref={ref} className='w-[75%] mx-auto relative'>
         <motion.div
-        style={{scaleY: scrollYProgress}} className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'/>
+        style={{scaleY: scrollYProgress}} className='absolute md:left-9 md:top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'/>
         <ul>
           <Details position="Associates in Computer Science" company="@Golden West College" 
           time="2021 - 2023" work="Succeeded in getting a associates degree in computer science from Golden West College in the span of 2 years. Placed on the president's honor list for 3 semester in a row.
