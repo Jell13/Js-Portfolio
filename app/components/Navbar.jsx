@@ -91,11 +91,11 @@ const Navbar = () => {
             
             <nav className="md:flex hidden gap-2 w-1/3 justify-center items-center">
 
-                <Link className="w-8 h-8 mr-4" href="https://github.com">
+                <Link className="w-8 h-8 mr-4" href="https://github.com/Jell13">
                     <GithubIcon className="w-full h-full"/>
                 </Link>
                 
-                <Link className="w-8 h-8" href="https://linkedin.com">
+                <Link className="w-8 h-8" href="https://linkedin.com/in/jason-sugiharto">
                     <LinkedInIcon className="w-full h-full"/>
                 </Link>
                 
