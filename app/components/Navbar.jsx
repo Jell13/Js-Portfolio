@@ -123,7 +123,7 @@ const Navbar = () => {
                 ))}
             </nav>
             
-            <nav className="flex gap-2 justify-center items-center">
+            <nav className="flex gap-2 justify-center mt-6 items-center">
 
                 <Link className="w-8 h-8 mr-4" href="https://github.com">
                     <GithubIcon className="w-full dark:bg-dark bg-light h-full"/>
