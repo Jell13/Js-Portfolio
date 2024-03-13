@@ -27,7 +27,7 @@ const About = () => {
           <div className='md:w-1/2'>
             <h1 className='md:text-xl text-lg font-semibold mb-10'>BIOGRAPHY</h1>
             <p>
-            Hello, I'm Jason, a proficient web developer experienced in both front-end and back-end development. I strive to create clients' visions using my dedication to problem solving in coding.
+            Hello, I&apos;m Jason, a proficient web developer experienced in both front-end and back-end development. I strive to create clients&apos; visions using my dedication to problem solving in coding.
             </p>
             <p className='mt-4'>
               I approach challenges like an intricate puzzle. I carefully piece together each component to carefully craft the desired output. This approach not only increases efficiency but also makes the process more enjoyable and fullfilling.
@@ -37,7 +37,7 @@ const About = () => {
             </p>
           </div>
           <div className='md:w-1/2 md:ml-8 relative flex justify-center h-max rounded-2xl border-2 border-solid border-dark'>
-            <Image src={Hero} className='w-full h-auto rounded-2xl'></Image>      
+            <Image src={Hero} alt='hero' className='w-full h-auto rounded-2xl'></Image>      
           </div>
           
         </div>
