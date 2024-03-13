@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       <TransitionEffect/>
-      <div className='h-full w-full min-h-screen bg-light dark:bg-dark dark:text-white flex  flex-col items-center sm:p-8 md:p-12 lg:p-20 xl:p-48'>
+      <div className='h-full w-full bg-light dark:bg-dark dark:text-white flex  flex-col items-center sm:p-8 md:p-12 lg:p-20 xl:p-48'>
         <motion.div
         initial={{y:"10vh"}}
         animate={{y:"0%"}}
