@@ -12,11 +12,11 @@ const About = () => {
   return (
     <>
       <TransitionEffect/>
-      <div className='h-full w-full bg-light dark:bg-dark dark:text-white flex  flex-col items-center sm:p-8 md:p-12 lg:p-20 xl:p-48'>
+      <div className='h-full w-full bg-light dark:bg-dark dark:text-white flex flex-col items-center mb-6 p-4'>
         <motion.div
         initial={{y:"10vh"}}
         animate={{y:"0%"}}
-        transition={{duration: 1.5}} className='text-4xl md:text-7xl p-8 font-bold flex justify-center self-center'>
+        transition={{duration: 1.5}} className='text-4xl md:text-7xl mt-16 font-bold flex justify-center self-center'>
           Passion Fuels Purpose!
         </motion.div>
 
