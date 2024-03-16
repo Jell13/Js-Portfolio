@@ -31,7 +31,7 @@ export default function Home() {
 
         <div className='mt-10'>
           <a href="/Resume-Jason.pdf" className='bg-dark p-2 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark duration-300 border-2 border-solid
-          border-transparent hover:border-dark text-light dark:text-dark dark:bg-light dark:hover:bg-dark dark:hover:text-light' download='Resume-Jason'>Resume</a>
+          border-transparent hover:border-dark text-light dark:text-dark dark:bg-light dark:hover:bg-dark dark:hover:text-light' download='Resume-Jason.pdf'>Resume</a>
         </div>
       </motion.div>
     </>
