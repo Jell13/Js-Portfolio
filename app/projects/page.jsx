@@ -36,6 +36,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 const Projects = () => {
   return (
     <>
+        <TransitionEffect/>
         <div className='w-full mb-6 p-4 flex flex-col items-center justify-center'>
           <motion.div
           initial={{y:"10vh"}}

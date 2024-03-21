@@ -9,6 +9,7 @@ import {motion} from 'framer-motion'
 export default function Home() {
   return (
     <>
+      <TransitionEffect/>
       <motion.div
       initial={{y:"10vh"}}
       animate={{y:"0%"}}

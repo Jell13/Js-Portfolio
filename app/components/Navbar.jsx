@@ -104,8 +104,6 @@ const Navbar = () => {
                 <CustomLink href={'/about'} title={'About'}></CustomLink>
                 <CustomLink href={'/projects'} title={'Projects'}></CustomLink>
                 <CustomLink href={'/contact'} title={'Contact'}></CustomLink> */}
-            
-                {routing && <TransitionEffect/>}
                 
                 {links.map((link) => (
                     <CustomLink key={link.title} href={link.href} title={link.title}/>
@@ -144,7 +142,6 @@ const Navbar = () => {
                 <CustomLink href={'/about'} title={'About'}></CustomLink>
                 <CustomLink href={'/projects'} title={'Projects'}></CustomLink>
                 <CustomLink href={'/contact'} title={'Contact'}></CustomLink> */}
-                {routine && <TransitionEffect/>}
                 {links.map((link) => (
                     <CustomMobileLink key={link.title} href={link.href} title={link.title} toggle={handleClick}/>
                 ))}

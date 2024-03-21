@@ -11,6 +11,7 @@ import Experience from '../components/Experience'
 const About = () => {
   return (
     <>
+    <TransitionEffect/>
       <div className='h-full w-full bg-light dark:bg-dark dark:text-white flex flex-col items-center mb-6 p-4'>
         <motion.div
         initial={{y:"10vh"}}
