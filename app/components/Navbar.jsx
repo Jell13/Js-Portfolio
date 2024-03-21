@@ -62,27 +62,6 @@ const Navbar = () => {
     const[mode, setMode] = useThemeSwitcher();
     const[open, setOpen] = useState(false)
 
-    const path = usePathname()
-    const[routing,setRouting] = useState(false)
-    const[prevPath, setPrevPath] = useState("/")
-
-    useEffect(() => {
-        if(prevPath !== path){
-            setRouting(true)
-        }
-    },[path,prevPath])
-
-    useEffect(() => {
-        if(routing){
-            setPrevPath(path);
-            const timeout = setTimeout(() => {
-                setRouting(false)
-            },1200)
-
-            return() => clearTimeout(timeout)
-        }
-
-    })
 
     const handleClick = () => {
         setOpen(!open)
