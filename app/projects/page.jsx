@@ -46,8 +46,8 @@ const Projects = () => {
           </motion.div>
           <div className='grid mt-20 w-[80vw] gap-24'>
             <div className=''>
-              <FeaturedProject title="Social Media App" type="Featured Project" link="/" summary="A social media app using
-              NextJs, MongoDB, TailwindCSS" github="/" img={profile}/>
+              <FeaturedProject title="Instant Messaging App" type="Featured Project" link="/" summary="An instant messaging app using
+              NextJs, Convex, TailwindCSS, Clerk" github="/" img={profile}/>
             </div>
             {/* <div className='col-span-6'>
               Project 1
