@@ -6,12 +6,13 @@ import { SocialIcon } from 'react-social-icons'
 import Link from 'next/link'
 import Image from 'next/image'
 import profile from '../../public/profile.png'
+import notenet from '../../public/notenet.png'
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
   return (
     <article className='w-full min-w-screen-lg p-12 flex flex-col md:flex-row items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl'>
       <Link className='md:w-1/2 cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
-        <Image src={img} alt={title} className='w-full h-auto'/>
+        <Image src={img} alt={title} className='w-full h-full'/>
       </Link>
 
       <div className='md:w-1/2 flex flex-col items-start justify-between pl-6'>
@@ -26,7 +27,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
             fgColor='black'
             
             />
-          <Link className='ml-4 rounded-lg bg-dark text-light p-2  px-6 text-lg hover:bg-light hover:text-dark duration-500' href="/">Visit Project</Link>
+          <Link className='ml-4 rounded-lg bg-dark text-light p-2  px-6 text-lg hover:bg-light hover:text-dark duration-500' href="https://notenet.vercel.app/">Visit Project</Link>
         </div>
       </div>
     </article>
@@ -46,8 +47,8 @@ const Projects = () => {
           </motion.div>
           <div className='grid mt-20 w-[80vw] gap-24'>
             <div className=''>
-              <FeaturedProject title="Instant Messaging App" type="Featured Project" link="/" summary="An instant messaging app using
-              NextJs, Convex, TailwindCSS, Clerk" github="/" img={profile}/>
+              <FeaturedProject title="Note Taking App" type="Featured Project" link="/" summary="A note taking app using
+              NextJs-14, Convex, ClerkJs, react-quill" github="https://github.com/Jell13/notenet" img={notenet}/>
             </div>
             {/* <div className='col-span-6'>
               Project 1
