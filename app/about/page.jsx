@@ -1,8 +1,7 @@
 "use client"
 
 import React from 'react'
-import TransitionEffect from '../components/TransitionEffect'
-import {motion} from 'framer-motion'
+import {delay, motion} from 'framer-motion'
 import Image from 'next/image'
 import Hero from '../../public/hero.jpg'
 import Skills from '../components/Skills'
@@ -11,14 +10,10 @@ import Experience from '../components/Experience'
 const About = () => {
   return (
     <>
-    <TransitionEffect/>
       <div className='h-full w-full bg-light dark:bg-dark dark:text-white flex flex-col items-center mb-6 p-4'>
-        <motion.div
-        initial={{y:"10vh"}}
-        animate={{y:"0%"}}
-        transition={{duration: 1.5}} className='text-4xl md:text-7xl mt-16 font-bold flex justify-center self-center'>
+        <div className='text-4xl md:text-7xl mt-16 font-bold flex justify-center self-center'>
           Passion Fuels Purpose!
-        </motion.div>
+        </div>
 
         {/* Biography */}
         <div className='mt-20 p-8 flex flex-col gap-5 md:flex-row self-start'>
@@ -36,9 +31,9 @@ const About = () => {
               I am deeply passionate about creating interactive experiences accessible on different devices. Eager to find opportunities to continue growing my skills and expertise in the future.
             </p>
           </div>
-          <div className='md:w-1/2 md:ml-8 relative flex justify-center h-max rounded-2xl border-2 border-solid border-dark'>
+          <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.6, duration: 0.4, ease: "easeInOut"}}} className='md:w-1/2 md:ml-8 relative flex justify-center h-max rounded-2xl border-2 border-solid border-dark'>
             <Image src={Hero} alt='hero' className='w-full h-auto rounded-2xl'></Image>      
-          </div>
+          </motion.div>
           
         </div>
 

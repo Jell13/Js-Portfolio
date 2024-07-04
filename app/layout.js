@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import PageTransition from "./components/PageTransition";
+import StairTransition from "./components/StairAnimation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,10 @@ export default function RootLayout({ children }) {
               <Navbar/>
             </div>
             <div className="h-[calc(100vh-6rem)]">
-              {children}
+              <StairTransition/>
+              <PageTransition>
+                {children}
+              </PageTransition>
             </div> 
         </div>   
       </body>

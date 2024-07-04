@@ -7,7 +7,6 @@ import {AnimatePresence, motion} from "framer-motion"
 import useThemeSwitcher from "./hooks/useThemeSwitcher"
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Icons"
 import { useEffect, useState } from "react"
-import TransitionEffect from "./TransitionEffect"
 
 const links = [
     {
