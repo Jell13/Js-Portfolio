@@ -11,7 +11,7 @@ export default function Home() {
       <div className='h-full w-full'>
         <div className='h-full w-full flex flex-col justify-center items-center'>
           
-            <Image src="/profile.png" alt='profile' width={90} height={90} className='rounded-[100%] md:mt-40 xl:mt-64 mt-36'></Image>
+            <Image src="/profile.png" alt='profile' width={90} height={90} className='rounded-[100%] md:mt-40 xl:mt-64 mt-52'></Image>
             <p className='pt-2'>Software Developer</p>
             <h1 className='text-2xl'>
               <Typewriter
