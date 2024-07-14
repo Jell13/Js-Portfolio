@@ -36,14 +36,16 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 const Projects = () => {
   return (
     <>
-        <div className='w-full mb-6 p-4 flex flex-col items-center justify-center'>
-          <div className='md:text-7xl text-4xl mt-16 font-bold flex self-center '>
-            Learn By Doing
-          </div>
-          <div className='grid mt-20 w-[80vw] gap-24'>
-            <div className=''>
-              <FeaturedProject title="Note Taking App" type="Featured Project" link="/" summary="A note taking app using
-              NextJs-14, Convex, ClerkJs, react-quill" github="https://github.com/Jell13/notenet" img={notenet}/>
+        <div className='w-full mb-6 p-4'>
+          <div className='w-full h-full flex flex-col items-center'>
+            <div className='md:text-7xl text-4xl mt-16 font-bold flex '>
+              Learn By Doing
+            </div>
+            <div className='grid mt-20 w-[80vw] gap-24'>
+              <div className=''>
+                <FeaturedProject title="Note Taking App" type="Featured Project" link="/" summary="A note taking app using
+                NextJs-14, Convex, ClerkJs, react-quill" github="https://github.com/Jell13/notenet" img={notenet}/>
+              </div>
             </div>
           </div>
         </div>

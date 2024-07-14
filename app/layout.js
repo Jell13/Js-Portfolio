@@ -14,18 +14,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-light dark:bg-dark`}>
-        <div className="h-screen w-screen text-dark dark:bg-dark dark:text-light">
-            <div className="h-24">
-              <Navbar/>
-            </div>
-            <div className="h-[calc(100vh-6rem)]">
-              <StairTransition/>
-              <PageTransition>
-                {children}
-              </PageTransition>
-            </div> 
-        </div>   
+      <body className={`${inter.className} bg-light dark:bg-dark text-dark dark:text-light`}>
+          <div className="h-24">
+            <Navbar/>
+          </div>
+          <div className="h-[calc(100vh-96px)]">
+            <StairTransition/>
+            <PageTransition>
+              {children}
+            </PageTransition>
+          </div> 
       </body>
     </html>
   );

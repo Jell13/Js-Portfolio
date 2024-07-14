@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <div className='h-full w-full bg-light dark:bg-dark dark:text-white flex flex-col items-center mb-6 p-4'>
-        <div className='text-4xl md:text-7xl mt-16 font-bold flex justify-center self-center'>
+        <div className='text-4xl md:text-7xl mt-16 font-bold flex justify-center self-center p-4'>
           Passion Fuels Purpose!
         </div>
 
@@ -32,7 +32,7 @@ const About = () => {
             </p>
           </div>
           <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.6, duration: 0.4, ease: "easeInOut"}}} className='md:w-1/2 md:ml-8 relative flex justify-center h-max rounded-2xl border-2 border-solid border-dark'>
-            <Image src={Hero} alt='hero' className='w-full h-auto rounded-2xl'></Image>      
+            <img src={"/hero.jpg"} alt='hero' className='w-full h-auto rounded-2xl'/>     
           </motion.div>
           
         </div>
