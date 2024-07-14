@@ -16,7 +16,7 @@ const Details = ({position, company, companyLink, time, address, work}) => {
         {position}&nbsp;
         <a href=""
         target='_blank'
-        className='dark:text-purple-400 text-cyan-400 animate-pulse capitalize'>
+        className='dark:text-blue-500 text-orange-500 animate-pulse capitalize'>
           {company}
         </a>
       </h3>
