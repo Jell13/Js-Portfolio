@@ -27,7 +27,7 @@ export default function Home() {
             <h1 className='text-2xl'>
               <Typewriter
                 options={{
-                  strings: ["Jason Sugiharto", 'Guy-who-likes-drawing', 'ButMainlyCodes'],
+                  strings: ["Jason Sugiharto", 'DataGuy', 'CodeLover'],
                   autoStart: true,
                   loop: true,
                   delaySpeed: 2000
