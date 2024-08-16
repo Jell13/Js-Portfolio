@@ -4,9 +4,9 @@ import {motion} from 'framer-motion'
 import { SocialIcon } from 'react-social-icons'
 import Link from 'next/link'
 import Image from 'next/image'
-import profile from '../../public/profile.png'
 import notenet from '../../public/notenet.png'
 import livedocs from '../../public/livedocs.png'
+import order from '../../public/order_system.png'
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
   return (
@@ -74,11 +74,9 @@ const Projects = () => {
                 NextJs-14, Convex, ClerkJs, react-quill" github="https://github.com/Jell13/notenet" img={notenet}/>
               </div>
             </div>
-            <div className='w-[80vw] mt-10 grid grid-cols-2 gap-24'>
-              <NormalProject title="LiveDocs" type="" link="https://livedocs-delta.vercel.app/" github="https://github.com/Jell13/livedocs" img={livedocs}/>
-              {/* <div className='w-full p-12 bg-white text-black rounded-3xl'>
-                Project 2
-              </div> */}
+            <div className='w-[80vw] mt-10 grid grid-cols-2 gap-24 mb-10'>
+              <NormalProject title="LiveDocs" type="" link="https://livedocs-delta.vercel.app/" github="https://github.com/Jell13/livedocs" img={livedocs} summary="NextJs, React, LiveBlocks, Shadcn, Lexical,"/>
+              <NormalProject title="Ordering" type="" link="https://ifgf-oc-cafe.vercel.app/" github="https://github.com/Jell13/order-system" img={order} summary="NextJs, React, Convex, Shadcn, Tailwind"/>
             </div>
           </div>
         </div>
