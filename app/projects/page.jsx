@@ -41,7 +41,7 @@ const NormalProject = ({title, img, link, github,summary}) => {
         <Image src={img} alt={title} className='w-full'/>
       </Link>
 
-      <div className='w-full flex flex-col items-start justify-between pl-6'>
+      <div className='w-full flex flex-col items-start justify-between pl-6 mb-10'>
 
         <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
           <h2 className='my-2 w-full text-left text-4xl font-bold text-dark'>{title}</h2>
