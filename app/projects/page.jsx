@@ -53,7 +53,7 @@ const NormalProject = ({title, img, link, github,summary}) => {
             fgColor='black'
             
             />
-          <Link className='ml-4 rounded-lg bg-dark text-light p-2  px-6 text-lg hover:bg-light hover:text-dark duration-500' href="https://notenet.vercel.app/">Visit Project</Link>
+          <Link className='ml-4 rounded-lg bg-dark text-light p-2  px-6 text-lg hover:bg-light hover:text-dark duration-500' href={link}>Visit Project</Link>
         </motion.div>
       </div>
     </article>
