@@ -49,7 +49,7 @@ const CustomLink = ({href, title}) => {
     return(
         <Link className="relative group" href={href}>
             {title}
-            <span className={`h-[2px] inline-block absolute bg-dark dark:text-dark dark:bg-light left-0 bottom-0.5
+            <span className={`h-[1px] inline-block absolute bg-dark dark:text-dark dark:bg-light left-0 bottom-0.5
             group-hover:w-full transition-[width] ease duration-300 ${router === href ? 'w-full' :' w-0'}`}>
                 &nbsp;</span>
         </Link>
@@ -77,12 +77,7 @@ const Navbar = () => {
 
         <div className="w-full justify-center items-center flex">
             <nav
-            className="md:flex hidden flex-row gap-6 w-1/3">
-                {/* <CustomLink href='/' title={'Home'}></CustomLink>
-                <CustomLink href={'/about'} title={'About'}></CustomLink>
-                <CustomLink href={'/projects'} title={'Projects'}></CustomLink>
-                <CustomLink href={'/contact'} title={'Contact'}></CustomLink> */}
-                
+            className="md:flex hidden flex-row gap-6 w-1/3">                
                 {links.map((link) => (
                     <CustomLink key={link.title} href={link.href} title={link.title}/>
                 ))}

@@ -1,10 +1,15 @@
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import PageTransition from "./components/PageTransition";
 import StairTransition from "./components/StairAnimation";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500"]
+})
 
 export const metadata = {
   title: "Jason Sugiharto Portfolio",
@@ -14,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-light dark:bg-dark text-dark dark:text-light`}>
+      <body className={`${montserrat.className} bg-light dark:bg-dark text-dark dark:text-light`}>
           <div className="h-24">
             <Navbar/>
           </div>
