@@ -69,12 +69,12 @@ const Projects = () => {
             <div className='md:text-7xl text-4xl mt-16 font-bold flex '>
               Learn By Doing
             </div>
-            {/* <div className='w-full h-full mt-10'>
+            <div className='w-full h-full mt-10'>
               <Spline
                 className='w-full h-full'
-                scene="https://prod.spline.design/TKLWEpyAT-CYV0df/scene.splinecode" 
+                scene="https://prod.spline.design/j6yO3T4Ikxm6P5m9/scene.splinecode" 
               />
-            </div> */}
+            </div>
             <div className='grid mt-20 w-[80vw] gap-24'>
               <div className=''>
                 <FeaturedProject title="NoteNet" type="Featured Project" link="https://notenet.vercel.app/" summary="A note taking app using
