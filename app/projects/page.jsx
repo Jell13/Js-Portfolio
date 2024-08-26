@@ -7,6 +7,7 @@ import Image from 'next/image'
 import notenet from '../../public/notenet.png'
 import livedocs from '../../public/livedocs.png'
 import order from '../../public/order_system.png'
+import Spline from '@splinetool/react-spline/next';
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
   return (
@@ -67,6 +68,12 @@ const Projects = () => {
           <div className='w-full h-full flex flex-col items-center'>
             <div className='md:text-7xl text-4xl mt-16 font-bold flex '>
               Learn By Doing
+            </div>
+            <div className='w-full h-full mt-10'>
+              <Spline
+                className='w-full h-full'
+                scene="https://prod.spline.design/TKLWEpyAT-CYV0df/scene.splinecode" 
+              />
             </div>
             <div className='grid mt-20 w-[80vw] gap-24'>
               <div className=''>
