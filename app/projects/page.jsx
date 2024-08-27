@@ -81,7 +81,7 @@ const Projects = () => {
                 NextJs-14, Convex, ClerkJs, react-quill" github="https://github.com/Jell13/notenet" img={notenet}/>
               </div>
             </div>
-            <div className='w-[80vw] mt-10 grid md:grid-cols-2 gap-24 mb-10'>
+            <div className='w-[80vw] mt-10 grid md:grid-cols-2 md:gap-24 gap-10 mb-10'>
               <NormalProject title="LiveDocs" type="" link="https://livedocs-delta.vercel.app/" github="https://github.com/Jell13/livedocs" img={livedocs} summary="NextJs, React, LiveBlocks, Shadcn, Lexical,"/>
               <NormalProject title="Ordering" type="" link="https://ifgf-oc-cafe.vercel.app/" github="https://github.com/Jell13/order-system" img={order} summary="NextJs, React, Convex, Shadcn, Tailwind"/>
             </div>
