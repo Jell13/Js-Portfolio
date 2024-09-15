@@ -78,7 +78,7 @@ const Projects = () => {
             <div className='grid mt-20 w-[80vw] gap-24'>
               <div className=''>
                 <FeaturedProject title="NoteNet" type="Featured Project" link="https://notenet.vercel.app/" summary="A note taking app using
-                NextJs-14, Convex, ClerkJs, react-quill" github="https://github.com/Jell13/notenet" img={notenet}/>
+                NextJs-14, Convex, ClerkJs, TipTap Editor" github="https://github.com/Jell13/notenet" img={notenet}/>
               </div>
             </div>
             <div className='w-[80vw] mt-10 grid md:grid-cols-2 md:gap-10 gap-10 mb-10'>
