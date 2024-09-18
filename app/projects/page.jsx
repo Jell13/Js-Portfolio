@@ -78,12 +78,12 @@ const Projects = () => {
             <div className='grid mt-20 w-[80vw] gap-24'>
               <div className=''>
                 <FeaturedProject title="NoteNet" type="Featured Project" link="https://notenet.vercel.app/" summary="A note taking app using
-                NextJs-14, Convex, ClerkJs, TipTap Editor" github="https://github.com/Jell13/notenet" img={notenet}/>
+                Next.Js, Convex, TailwindCSS, Shadcn, ClerkJs, TipTap Editor" github="https://github.com/Jell13/notenet" img={notenet}/>
               </div>
             </div>
             <div className='w-[80vw] mt-10 grid md:grid-cols-2 md:gap-10 gap-10 mb-10'>
-              <NormalProject title="LiveDocs" type="" link="https://livedocs-delta.vercel.app/" github="https://github.com/Jell13/livedocs" img={livedocs} summary="NextJs, React, LiveBlocks, Shadcn, Lexical,"/>
-              <NormalProject title="Ordering" type="" link="https://ifgf-oc-cafe.vercel.app/" github="https://github.com/Jell13/order-system" img={order} summary="NextJs, React, Convex, Shadcn, Tailwind"/>
+              <NormalProject title="LiveDocs" type="" link="https://livedocs-delta.vercel.app/" github="https://github.com/Jell13/livedocs" img={livedocs} summary="Next.Js, React, TailwindCSS, LiveBlocks, Shadcn, Lexical"/>
+              <NormalProject title="Ordering" type="" link="https://ifgf-oc-cafe.vercel.app/" github="https://github.com/Jell13/order-system" img={order} summary="Next.Js, React, TailwindCSS, Convex, Shadcn"/>
             </div>
           </div>
         </div>
